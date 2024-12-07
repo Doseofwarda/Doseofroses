@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dose of Roses</title>
+    <style>
+        /* Styling for the contact form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* Light background color */
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #800030; /* Burgundy color for header */
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #800020; /* Burgundy color for form title */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #800020; /* Burgundy color for the button */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #9b1c3e; /* Darker shade of burgundy for hover effect */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+
+        /* TikTok contact section */
+        .contact-tiktok {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #800020;
+        }
+
+        .contact-tiktok a {
+            color: #800020;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-tiktok a:hover {
+            color: #9b1c3e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to reach out!</p>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Get In Touch</h2>
+            <!-- Start of the contact form -->
+            <form name="contact-form" method="POST" data-netlify="true" action="/success">
+                <!-- Hidden input required by Netlify form handling -->
+                <input type="hidden" name="form-name" value="contact-form">
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="query">Your Query:</label>
+                <textarea id="query" name="query" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            <!-- End of the contact form -->
+
+            <!-- TikTok Contact Section -->
+            <div class="contact-tiktok">
+                <p>For quicker responses, feel free to <a href="https://www.tiktok.com/@dose_of_roses?_t=8s0E2o4uFbl&_r=1" target="_blank">contact us on TikTok</a>!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dose of Roses. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
